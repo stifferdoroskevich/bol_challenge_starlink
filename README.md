@@ -1,3 +1,12 @@
+# Starlink Lookup
+# Motivation
+### Create a program that:
+- Import the SpaceX Satellite data as a time series into a database
+  - Json inside project/data
+- Query the data to determine the last known latitude/longitude of the satellite for a given time
+- Fetch from the database the closest satellite at a given time T, and a given a position on a globe as a (latitude, longitude) coordinate.
+  - Using Haversine Formula
+
 ## Requirements
 - docker
 - python >= 3.7
