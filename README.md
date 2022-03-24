@@ -3,7 +3,7 @@
 - python >= 3.7
 
 ## Structure
-
+```
 ├── project
 │   ├── data
 │   │   ├── starlink_historical_data.json
@@ -19,7 +19,7 @@
 │       └── sat_query.py
 ├── README.md
 └── requirements.txt
-
+```
 
 ## How to run project locally
 ```
