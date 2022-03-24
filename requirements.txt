@@ -1,0 +1,5 @@
+psycopg2-binary==2.9.3
+haversine==2.5.1
+ijson==3.1.4
+click==8.0.4
+python-dotenv==0.19.2
