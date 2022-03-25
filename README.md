@@ -7,6 +7,24 @@
 - Fetch from the database the closest satellite at a given time T, and a given a position on a globe as a (latitude, longitude) coordinate.
   - Using Haversine Formula
 
+## Questions to the interviewer (Like we are working together)
+- About the data 
+  - Who is consuming the data and their needs?
+    - Is important to understand how this CLI is helping the user solve the problem.
+    - Like, the user will be using everyday? Every hour?
+    - Can I import all the data in the morning once per day?
+  - Volume?
+  - File size?
+  - Is useful to store with null values in Lat or Long?
+
+- Design Choices
+  - Memory over performance in reading the data.
+    - Using ijson instead o Pandas, ijson have a Peak Memory usage of 8.0 MiB vs 265 MiB in Pandas (For a 35 MB json File)
+    - With more info about the data (questions above) I can choose the better solution.
+  - Filtering Null values.
+    - The goal is to "determine the last known latitude/longitude of the satellite". Data without lat/long is not useful.
+    - Less data to store.
+
 ## Requirements
 - docker
 - python >= 3.7
